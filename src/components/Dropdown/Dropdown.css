@@ -1,0 +1,39 @@
+.box {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 109px 0 108px;;
+}
+
+.dropdown {
+  width: 100%;
+  margin-bottom: 33px;
+}
+
+.dropdown-titre-arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  height: 47px;
+}
+
+.dropdown-titre {
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  margin-left: 18px;
+}
+
+.dropdown-arrow {
+  margin-right: 18px;
+}
+
+.dropdown-description {
+  background-color: #F7F7F7;
+  color: #FF6060;
+  height: fit-content;
+  font-size: 24px;
+  font-weight: 400;  
+  padding: 36px 27px 19px 18px;
+}

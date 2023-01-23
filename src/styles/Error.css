@@ -1,0 +1,29 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px ;
+}
+
+.error-titre {
+  color: #ff6060;
+  font-size: 288px;
+  margin: auto;
+}
+
+.error-description {
+  color: #FF6060;
+  display: flex;
+  font-size: 36px;
+  justify-content: center;
+}
+
+.error-home {
+  color: #FF6060;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  height: 26px;
+  margin-top: 182px;
+}

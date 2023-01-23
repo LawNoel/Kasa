@@ -1,0 +1,26 @@
+.slide{
+  height: 415px;
+  display: flex;
+  position: relative;
+  margin-top: 25px;
+  border-radius: 25px;
+}
+
+.slide-arrow-left {
+  position: absolute;
+  top: 40%;
+  margin-left: 20px;
+}
+
+.slide-arrow-right {
+  position: absolute;
+  top: 40%;
+  left: 95%;
+  margin-right: 5px;
+}
+
+.slide-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
