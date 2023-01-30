@@ -25,18 +25,23 @@ const Carrousel = ({ images }) => {
   return (
     <div className="slide">
       <div className="slide-arrow">
-        <img
-          className="slide-arrow-left"
-          src={ArrowLeft}
-          alt="précédent"
-          onClick={prev}
-        />
-        <img
-          className="slide-arrow-right"
-          src={ArrowRight}
-          alt="précédent"
-          onClick={next}
-        />
+        <div className="slide-arrow-left">
+          <img
+            className="arrows"
+            src={ArrowLeft}
+            alt="précédent"
+            onClick={prev}
+          />
+        </div>
+
+        <div className="slide-arrow-right">
+          <img
+            className="arrows"
+            src={ArrowRight}
+            alt="précédent"
+            onClick={next}
+          />
+        </div>
       </div>
 
       <img

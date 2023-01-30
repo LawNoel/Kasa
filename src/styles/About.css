@@ -4,3 +4,9 @@
   flex-direction: column;
   margin: 0 109px 0 108px;
 }
+
+@media screen and (min-width: 375px) and ( max-width: 767px) {
+  .box {
+    margin: 0;
+  }
+}

@@ -1,0 +1,15 @@
+.allStars {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.stars {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 375px) and ( max-width: 767px) {
+  .stars {
+    margin-right: 5px;
+    height: 16px;
+  }
+}

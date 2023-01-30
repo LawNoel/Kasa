@@ -17,7 +17,11 @@ const Dropdown = ({ titre, description }) => {
             setOpen(!open);
           }}
         >
-          <img src={ArrowDown} alt="afficher la description" />
+          <img
+            className="arrow"
+            src={open ? ArrowDown : ArrowUp}
+            alt="afficher la description"
+          />
         </div>
       </div>
 

@@ -39,6 +39,7 @@
   .card {
     width: 100%;
     height: 255px;
+    margin-bottom: 20px;
   }
 
   .card-titre {

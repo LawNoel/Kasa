@@ -34,8 +34,34 @@
 
 @media screen and (min-width: 375px) and ( max-width: 767px) {
 
+  .banniere {
+    border-radius: 10px;
+    height: 111px;
+    margin: 0;
+    margin-bottom: 23px;
+    position: relative;
+  }
+  
+  .banniere-img {
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .banniere-sombre {
+    background-color: #000000;
+    border-radius: 10px;
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
   .banniere-txt {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 24px;
   }
 }

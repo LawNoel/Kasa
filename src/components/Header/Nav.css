@@ -44,9 +44,14 @@ ul {
       color: #FF6060;
       font-size: 12px;
   }
-  
-    .banniere-txt {
-      font-size: 24px;
-      line-height: 24px;
-    }
+
+  .nav-link.active {
+    color: #FF6060;
+    text-decoration: underline;
   }
+
+  ul li {
+    margin-left: 10px;
+    text-transform: uppercase;
+  }
+}

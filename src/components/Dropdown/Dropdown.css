@@ -34,3 +34,31 @@
   padding: 36px 27px 19px 18px;
   list-style-type: none;
 }
+
+@media screen and (min-width: 375px) and ( max-width: 767px) {
+  .dropdown-description {
+    height: 100%;
+    background-color: #F7F7F7;
+    color: #FF6060;
+    font-size: 12px;
+    font-weight: 400;  
+    padding: 23px 7px 52px 12px;
+    list-style-type: none;
+  }
+
+  .dropdown-titre-arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF6060;
+    height: 30px;
+    border-radius: 5px;
+  }
+  
+  .dropdown-titre {
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    margin-left: 18px;
+  }
+}
