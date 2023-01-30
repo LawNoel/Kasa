@@ -1,0 +1,18 @@
+.info-logement-tags {
+  display: flex;
+  align-items: center;
+}
+
+.tag-display {
+  border: solid 1px #FF6060;
+  width: 125px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #FF6060;
+  color: #FFFFFF;
+  margin-right: 10px;
+}

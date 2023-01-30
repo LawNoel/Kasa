@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className="header">
       <div className="logo">
-        <img src={logo} alt="logo du site kasa" />
+        <img className="logo-image" src={logo} alt="logo du site kasa" />
       </div>
       <div className="nav">
         <ul>

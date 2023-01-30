@@ -21,24 +21,6 @@ const Carrousel = ({ images }) => {
       setIndex(index - 1);
     }
   };
-  // const [img, setImg] = useState({ url: images[0], index: 0 });
-  // const length = images.length;
-
-  // const nextSlide = () => {
-  //   setImg(
-  //     img.index === length - 1
-  //       ? { index: 0, url: images[0] }
-  //       : { index: img.index + 1, url: images[img.index + 1] }
-  //   );
-  // };
-
-  // const prevSlide = () => {
-  //   setImg(
-  //     img.index === 0
-  //       ? { index: length - 1, url: images[length - 1] }
-  //       : { index: img.index - 1, url: images[img.index - 1] }
-  //   );
-  // };
 
   return (
     <div className="slide">
@@ -57,7 +39,6 @@ const Carrousel = ({ images }) => {
         />
       </div>
 
-      {/* <img src={img.url} alt="images logement" /> */}
       <img
         className="slide-img"
         src={images[index]}

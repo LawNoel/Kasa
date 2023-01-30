@@ -4,47 +4,56 @@ import Nav from "../components/Header/Nav";
 import listLogement from "../datas/data.json";
 import Carrousel from "../components/Carrousel/Carrousel";
 import "../styles/FicheLogement.css";
+import Tags from "../components/Tags/Tags";
+import StarRating from "../components/StarRating/StarRating";
+import Dropdown from "../components/Dropdown/Dropdown";
+import Footer from "../components/Footer/Footer";
 
 const FicheLogement = () => {
   const logementId = useParams().id;
-  console.log(logementId);
+
   const logement = listLogement.find((logement) => logement.id === logementId);
-  console.log(logement);
-  const {
-    title,
-    pictures,
-    description,
-    host,
-    rating,
-    location,
-    equipments,
-    tags,
-  } = logement;
-  // console.log(logement, title);
+
+  const { title, pictures, description, host, location } = logement;
 
   return (
     <div>
       <Nav />
       <Carrousel images={pictures} />
-      <div className="info-logement-proprio">
-        <div className="info-logement">
+      <div className="info-logement">
+        <div className="info-logement-info">
           <h1 className="info-logement-titre">{title}</h1>
-          <h4 className="info-logement-sous-titre"> {location} </h4>
-          <ul>
-            <li> {tags} </li>
-          </ul>
-        </div>
-        {/* <div>
-          <div>
-            <div> {host} </div>
-            <div> {rating} </div>
+          <h4 className="info-logement-location"> {location} </h4>
+          <div className="info-logement-tags">
+            {logement.tags.map((tag, index) => (
+              <Tags key={index} allTag={tag} />
+            ))}
           </div>
-        </div> */}
+        </div>
+        <div className="info-logement-host-rating">
+          <div className="info-logement-host">
+            <div className="host-name"> {host.name} </div>
+            <img className="host-picture" src={host.picture} alt="host" />
+          </div>
+          <div className="info-logement-rating">
+            <StarRating rate={logement.rating} />
+          </div>
+        </div>
       </div>
-      {/* <div>
-        <div> {description} </div>
-        <div> {equipments} </div>
-      </div> */}
+      <div className="description-equipement">
+        <Dropdown
+          titre={"Description"}
+          description={description}
+          className="description"
+        />
+        <Dropdown
+          titre={"Équipements"}
+          description={logement.equipments.map((list) => (
+            <li key={list}> {list} </li>
+          ))}
+        />
+      </div>
+      <Footer />
     </div>
   );
 };

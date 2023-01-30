@@ -6,3 +6,15 @@
   background-color: #F6F6F6;
   border-radius: 25px;
 }
+
+@media screen and (min-width: 375px) and ( max-width: 767px) {
+
+  .liste-logements {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    padding: 0;
+  }
+
+}
