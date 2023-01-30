@@ -27,6 +27,7 @@
 .host-name {
   display: flex;
   align-items: center;
+  text-align: center;
   width: 93px;
   height: 52px;
   font-size: 18px;
@@ -95,15 +96,15 @@
     display: flex;
     align-items: center;
     width: 93px;
-    height: 52px;
+    height: 33px;
     font-size: 16px;
     font-weight: 500;
     color: #FF6060;
   }
   
   .host-picture {
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
   }
   
