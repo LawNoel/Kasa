@@ -1,8 +1,19 @@
-.banniere {
+.banniere-home, .banniere-about {
   border-radius: 25px;
   height: 225px;
   margin: 49.37px 0 43px 0;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banniere-home {
+  background-image: url("../../assets/IMG.png");
+}
+
+
+.banniere-about {
+  background-image: url("../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png");
 }
 
 .banniere-img {
@@ -34,12 +45,21 @@
 
 @media screen and (min-width: 375px) and ( max-width: 767px) {
 
-  .banniere {
+  .banniere-home {
     border-radius: 10px;
     height: 111px;
     margin: 0;
     margin-bottom: 23px;
     position: relative;
+  }
+
+  .banniere-about {
+    border-radius: 10px;
+    height: 223px;
+    margin: 0;
+    margin-bottom: 23px;
+    position: relative;
+    background-image: url("../../assets/About-Image-Mobile.png"); 
   }
   
   .banniere-img {
@@ -50,14 +70,7 @@
   }
   
   .banniere-sombre {
-    background-color: #000000;
     border-radius: 10px;
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    width: 100%;
   }
 
   .banniere-txt {

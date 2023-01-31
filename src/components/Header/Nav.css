@@ -18,6 +18,7 @@ justify-content: space-between;
 ul {
     display: flex;
     list-style-type: none;
+    padding-left: 0;
 }
 
 .nav .nav-link {

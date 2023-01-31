@@ -1,10 +1,10 @@
 import React from "react";
 import "./Banniere.css";
 
-function Banniere({ image, texte }) {
+function Banniere({ texte, home }) {
   return (
-    <div className="banniere">
-      <img className="banniere-img" src={image} alt="Bannière" />
+    <div className={home ? "banniere-home" : "banniere-about"}>
+      {/* <img className="banniere-img" src={image} alt="Bannière" /> */}
       <div className="banniere-sombre"></div>
       <span className="banniere-txt">{texte}</span>
     </div>

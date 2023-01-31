@@ -12,7 +12,11 @@ const Home = () => {
   return (
     <div>
       <Nav />
-      <Banniere image={imageAccueil} texte="Chez vous, partout et ailleurs" />
+      <Banniere
+        home={true}
+        image={imageAccueil}
+        texte="Chez vous, partout et ailleurs"
+      />
       <div className="liste-logements">
         {listLogement.map((logements, id) => {
           return (

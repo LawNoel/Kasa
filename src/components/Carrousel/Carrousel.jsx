@@ -31,6 +31,7 @@ const Carrousel = ({ images }) => {
             src={ArrowLeft}
             alt="précédent"
             onClick={prev}
+            style={{ display: images.length === 1 ? "none" : "block" }}
           />
         </div>
 
@@ -40,6 +41,7 @@ const Carrousel = ({ images }) => {
             src={ArrowRight}
             alt="précédent"
             onClick={next}
+            style={{ display: images.length === 1 ? "none" : "block" }}
           />
         </div>
       </div>

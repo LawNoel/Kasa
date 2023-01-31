@@ -19,7 +19,7 @@ const Dropdown = ({ titre, description }) => {
         >
           <img
             className="arrow"
-            src={open ? ArrowDown : ArrowUp}
+            src={open ? ArrowUp : ArrowDown}
             alt="afficher la description"
           />
         </div>
