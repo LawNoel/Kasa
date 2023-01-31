@@ -1,7 +1,6 @@
 import React from "react";
 import Nav from "../components/Header/Nav";
 import Banniere from "../components/Bannieres/Banniere";
-import imageAbout from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png";
 import Dropdown from "../components/Dropdown/Dropdown";
 import Footer from "../components/Footer/Footer";
 import "../styles/About.css";
@@ -10,7 +9,7 @@ const About = () => {
   return (
     <div>
       <Nav />
-      <Banniere image={imageAbout} />
+      <Banniere />
       <div className="box">
         <Dropdown
           titre={"Fiabilité"}
