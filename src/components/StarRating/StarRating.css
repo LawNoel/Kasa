@@ -10,6 +10,7 @@
 @media screen and (min-width: 375px) and ( max-width: 767px) {
   .stars {
     margin-right: 5px;
+    margin-left: 0;
     height: 16px;
   }
 }
