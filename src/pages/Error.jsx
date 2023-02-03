@@ -4,6 +4,7 @@ import Footer from "../components/Footer/Footer";
 import Nav from "../components/Header/Nav";
 import "../styles/Error.css";
 
+// Création de la page d'erreur 404
 const Error = () => {
   return (
     <div>

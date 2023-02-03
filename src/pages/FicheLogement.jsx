@@ -1,20 +1,24 @@
 import React from "react";
+// Import du hook useParams
 import { useParams } from "react-router-dom";
 import Nav from "../components/Header/Nav";
 import listLogement from "../datas/data.json";
 import Carrousel from "../components/Carrousel/Carrousel";
-import "../styles/FicheLogement.css";
 import Tags from "../components/Tags/Tags";
 import StarRating from "../components/StarRating/StarRating";
 import Dropdown from "../components/Dropdown/Dropdown";
 import Footer from "../components/Footer/Footer";
+import "../styles/FicheLogement.css";
 
+// Création de la page Fiche Logement
 const FicheLogement = () => {
+  // On utilise useParams pour récupérer les paramètres du logement en question
   const logementId = useParams().id;
 
+  // On récupère les données de notre fichier Json avec la méthode find
   const logement = listLogement.find((logement) => logement.id === logementId);
 
-  const { title, pictures, description, host, location } = logement;
+  const { pictures, title, location, description, host } = logement;
 
   return (
     <div>
@@ -48,8 +52,8 @@ const FicheLogement = () => {
         />
         <Dropdown
           titre={"Équipements"}
-          description={logement.equipments.map((list) => (
-            <li key={list}> {list} </li>
+          description={logement.equipments.map((equipement, c) => (
+            <li key={c}> {equipement} </li>
           ))}
         />
       </div>

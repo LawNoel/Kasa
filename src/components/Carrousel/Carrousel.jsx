@@ -1,9 +1,12 @@
+// Import de hook useState de react
 import React, { useState } from "react";
 import ArrowLeft from "../../assets/Arrow-left.png";
 import ArrowRight from "../../assets/Arrow-right.png";
 import "./Carrousel.css";
 
+// Création de la fonction d'affichage du carrousel
 const Carrousel = ({ images }) => {
+  // On déclare un hook d'état
   const [index, setIndex] = useState(0);
 
   const next = () => {

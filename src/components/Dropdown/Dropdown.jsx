@@ -4,7 +4,6 @@ import ArrowUp from "../../assets/Arrow-up.png";
 import "./Dropdown.css";
 
 const Dropdown = ({ titre, description }) => {
-  // Hook d'état
   const [open, setOpen] = useState(false);
 
   return (

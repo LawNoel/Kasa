@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.css";
 
+// Création de la fonction d'affichage des cartes de logements
 const Card = ({ logements }) => {
   return (
     <div className="card">

@@ -5,6 +5,7 @@ import Dropdown from "../components/Dropdown/Dropdown";
 import Footer from "../components/Footer/Footer";
 import "../styles/About.css";
 
+// Création de la page à propos
 const About = () => {
   return (
     <div>
