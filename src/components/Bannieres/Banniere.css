@@ -9,11 +9,13 @@
 
 .banniere-home {
   background-image: url("../../assets/IMG.png");
+  background-position: center;
 }
 
 
 .banniere-about {
   background-image: url("../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png");
+  background-position: center;
 }
 
 .banniere-img {
