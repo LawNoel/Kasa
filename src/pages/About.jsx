@@ -3,6 +3,7 @@ import Nav from "../components/Header/Nav";
 import Banniere from "../components/Bannieres/Banniere";
 import Dropdown from "../components/Dropdown/Dropdown";
 import Footer from "../components/Footer/Footer";
+import AboutData from "../datas/about.json";
 import "../styles/About.css";
 
 // Création de la page à propos
@@ -12,7 +13,16 @@ const About = () => {
       <Nav />
       <Banniere />
       <div className="box">
-        <Dropdown
+        {AboutData.map((data, d) => {
+          return (
+            <Dropdown
+              key={d}
+              titre={data.titre}
+              description={data.description}
+            />
+          );
+        })}
+        {/* <Dropdown
           titre={"Fiabilité"}
           description={
             "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
@@ -35,7 +45,7 @@ const About = () => {
           description={
             "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standarts sont aussi bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
           }
-        />
+        /> */}
       </div>
 
       <Footer />
