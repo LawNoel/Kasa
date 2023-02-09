@@ -19,7 +19,11 @@ const Home = () => {
       <div className="liste-logements">
         {listLogement.map((logements, id) => {
           return (
-            <NavLink key={id} to={`/logement/${logements.id}`}>
+            <NavLink
+              className="cards"
+              key={id}
+              to={`/logement/${logements.id}`}
+            >
               {" "}
               <Card logements={logements} />
             </NavLink>

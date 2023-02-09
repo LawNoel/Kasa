@@ -1,10 +1,14 @@
 .liste-logements {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 56px 50px 0 50px;
   background-color: #F6F6F6;
   border-radius: 25px;
+}
+
+.cards {
+  width: 30%;
 }
 
 @media screen and (min-width: 375px) and ( max-width: 767px) {
@@ -15,6 +19,10 @@
     background-color: white;
     border-radius: 25px;
     padding: 0;
+  }
+
+  .cards {
+    width: 100%;
   }
 
 }

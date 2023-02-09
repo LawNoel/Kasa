@@ -54,6 +54,10 @@ const Carrousel = ({ images }) => {
         src={images[index]}
         alt="les pièces de l'appartement"
       />
+
+      <span className="slide-count">
+        {index + 1}/{images.length}
+      </span>
     </div>
   );
 };

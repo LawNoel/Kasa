@@ -35,6 +35,19 @@
   border-radius: 25px;
 }
 
+.slide-count {
+  width: 24px;
+  height: 32.4px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 @media screen and (min-width: 375px) and ( max-width: 767px) {
   .slide{
     height: 255px;
@@ -52,6 +65,10 @@
   
   .arrows {
     height: 25px;
+  }
+
+  .slide-count {
+    display: none;
   }
   
 }

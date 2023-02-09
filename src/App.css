@@ -1,6 +1,7 @@
 body {
   margin: 40px 100px;
   font-family: "Montserrat", Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 375px) and ( max-width: 767px) {
