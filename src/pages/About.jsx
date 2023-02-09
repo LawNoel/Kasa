@@ -13,10 +13,10 @@ const About = () => {
       <Nav />
       <Banniere />
       <div className="box">
-        {AboutData.map((data, d) => {
+        {AboutData.map((data, indexData) => {
           return (
             <Dropdown
-              key={d}
+              key={indexData}
               titre={data.titre}
               description={data.description}
             />
